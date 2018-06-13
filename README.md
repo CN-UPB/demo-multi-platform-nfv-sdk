@@ -8,6 +8,14 @@ Example service: [Simple video streaming network service](https://github.com/son
 
 
 
+## Architecture
+
+First draft from whiteboard (13.06.18):
+
+![whiteboard_architecture](doc/whiteboard_architecture.jpg)
+
+
+
 ## Installation
 
 TODO
