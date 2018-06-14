@@ -1,0 +1,41 @@
+descriptor_extension: yml
+version: '0.5'
+files:
+  - path: tango_demo.yml
+    type: application/vnd.5gtango.nsd
+    tags:
+      - eu.5gtango
+  - path: tango_default-vnf0.yml
+    type: application/vnd.5gtango.vnfd
+    tags:
+      - eu.5gtango
+  - path: tango_default-vnf1.yml
+    type: application/vnd.5gtango.vnfd
+    tags:
+      - eu.5gtango
+  - path: tango_default-vnf2.yml
+    type: application/vnd.5gtango.vnfd
+    tags:
+      - eu.5gtango
+  - path: osm_demo.yml
+    type: application/vnd.etsi.osm.nsd
+    tags:
+      - etsi.osm
+  - path: osm_default-vnf0.yml
+    type: application/vnd.etsi.osm.vnfd
+    tags:
+      - etsi.osm
+  - path: osm_default-vnf1.yml
+    type: application/vnd.etsi.osm.vnfd
+    tags:
+      - etsi.osm
+  - path: osm_default-vnf2.yml
+    type: application/vnd.etsi.osm.vnfd
+    tags:
+      - etsi.osm
+package:
+  name: generated-project
+  version: '0.1'
+  maintainer: UPB
+  vendor: UPB
+  description: Demo network scenario with three VNFs

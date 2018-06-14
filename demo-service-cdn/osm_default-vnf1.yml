@@ -1,0 +1,41 @@
+vnfd-catalog:
+  vnfd:
+    - id: default-vnf1
+      name: default-vnf1
+      short-name: default-vnf1
+      vendor: UPB
+      version: 0.9
+      description: A default NSD with one default VNFDs
+      vdu:
+        - id: vdu01
+          name: vdu01
+          image: l4fw
+          vm-flavor:
+            vcpu-count: 1
+            memory-gb: 1
+            storage-gb: 10
+          interface:
+            - name: vdu-mgmt
+              type: EXTERNAL
+              virtual-interface:
+                type: VIRTIO
+              external-connection-point-ref: mgmt
+            - name: vdu-input
+              type: EXTERNAL
+              virtual-interface:
+                type: VIRTIO
+              external-connection-point-ref: input
+            - name: vdu-output
+              type: EXTERNAL
+              virtual-interface:
+                type: VIRTIO
+              external-connection-point-ref: output
+      connection-point:
+        - name: mgmt
+          type: VPORT
+        - name: input
+          type: VPORT
+        - name: output
+          type: VPORT
+      mgmt-interface:
+        cp: mgmt
