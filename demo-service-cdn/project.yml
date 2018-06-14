@@ -36,6 +36,6 @@ files:
 package:
   name: generated-project
   version: '0.1'
-  maintainer: UPB
-  vendor: UPB
+  maintainer: Paderborn University
+  vendor: de.upb
   description: Demo network scenario with three VNFs
