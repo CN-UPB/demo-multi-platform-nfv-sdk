@@ -18,15 +18,23 @@ First draft from whiteboard (13.06.18):
 
 ## Installation
 
-TODO
-
-
+* Descriptor generator
+  * `git clone https://github.com/sonata-nfv/tng-sdk-descriptorgen.git`
+* Project:
+  * `git clone https://github.com/sonata-nfv/tng-sdk-project.git`
+  * `cd tng-sdk-project`
+  * `python setup.py install`
+  * Setup the workspace: `tng-wks`
+* Packager:
+  * `git clone https://github.com/sonata-nfv/tng-sdk-package.git`
+  * `cd tng-sdk-package`
+  * `python setup.py install`
 
 ## Demo steps
 
 1. Generate OSM descriptors using tng-sdk-descriptorgen and download the generated descriptors with `project.yaml` (GUI)
-2. Check the generated project with `tng-prj status` (CLI)
-3. Package the project with `tng-pkg -p <pkg-dir>` (CLI)
+2. Unzip the downloaded `descriptors.zip` and check the generated project with `tng-prj -p descriptors --status` (CLI)
+3. Package the project with `tng-pkg -p descriptors` (CLI)
 4. Upload the package to OSM (or theoretically to 5GTANGO)
 5. Unpackage the package and trigger OSM instantiate (GUI?)
 6. Run the service on the emulator and show the running service on the emulator's dashboard (GUI)
