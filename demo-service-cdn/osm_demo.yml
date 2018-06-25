@@ -26,21 +26,21 @@ nsd-catalog:
             - member-vnf-index-ref: 2
               vnfd-connection-point-ref: mgmt
               vnfd-id-ref: default-vnf2
-        - id: vnf0-2-vnf1
-          name: vnf0-2-vnf1
-          vnfd-connection-point-ref:
-            - member-vnf-index-ref: 0
-              vnfd-connection-point-ref: output
-              vnfd-id-ref: default-vnf0
-            - member-vnf-index-ref: 1
-              vnfd-connection-point-ref: input
-              vnfd-id-ref: default-vnf1
-        - id: vnf1-2-vnf2
-          name: vnf1-2-vnf2
-          vnfd-connection-point-ref:
-            - member-vnf-index-ref: 1
-              vnfd-connection-point-ref: output
-              vnfd-id-ref: default-vnf1
-            - member-vnf-index-ref: 2
-              vnfd-connection-point-ref: input
-              vnfd-id-ref: default-vnf2
+        #- id: vnf0-2-vnf1
+        #  name: vnf0-2-vnf1
+        #  vnfd-connection-point-ref:
+        #    - member-vnf-index-ref: 0
+        #      vnfd-connection-point-ref: output
+        #      vnfd-id-ref: default-vnf0
+        #    - member-vnf-index-ref: 1
+        #      vnfd-connection-point-ref: input
+        #      vnfd-id-ref: default-vnf1
+        #- id: vnf1-2-vnf2
+        #  name: vnf1-2-vnf2
+        #  vnfd-connection-point-ref:
+        #    - member-vnf-index-ref: 1
+        #      vnfd-connection-point-ref: output
+        #      vnfd-id-ref: default-vnf1
+        #    - member-vnf-index-ref: 2
+        #      vnfd-connection-point-ref: input
+        #      vnfd-id-ref: default-vnf2
