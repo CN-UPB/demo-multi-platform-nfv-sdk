@@ -5,11 +5,11 @@ vnfd-catalog:
       short-name: default-vnf1
       vendor: UPB
       version: 0.9
-      description: A default NSD with one default VNFDs
+      description: Layer 4 forwarder VNF
       vdu:
         - id: vdu01
           name: vdu01
-          image: l4fw
+          image: l4fw-socat-img
           vm-flavor:
             vcpu-count: 1
             memory-gb: 1

@@ -5,11 +5,11 @@ vnfd-catalog:
       short-name: default-vnf0
       vendor: UPB
       version: 0.9
-      description: A default NSD with one default VNFDs
+      description: HTTP server
       vdu:
         - id: vdu01
           name: vdu01
-          image: http
+          image: http-apache-img
           vm-flavor:
             vcpu-count: 1
             memory-gb: 1
