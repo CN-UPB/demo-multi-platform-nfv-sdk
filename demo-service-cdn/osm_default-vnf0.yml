@@ -20,22 +20,22 @@ vnfd-catalog:
               virtual-interface:
                 type: VIRTIO
               external-connection-point-ref: mgmt
-            #- name: vnf0-input
-            #  type: EXTERNAL
-            #  virtual-interface:
-            #    type: VIRTIO
-            #  external-connection-point-ref: input
-            #- name: vnf0-output
-            #  type: EXTERNAL
-            #  virtual-interface:
-            #    type: VIRTIO
-            #  external-connection-point-ref: output
+            - name: vnf0-input
+              type: EXTERNAL
+              virtual-interface:
+                type: VIRTIO
+              external-connection-point-ref: input
+            - name: vnf0-output
+              type: EXTERNAL
+              virtual-interface:
+                type: VIRTIO
+              external-connection-point-ref: output
       connection-point:
         - name: mgmt
           type: VPORT
-        #- name: input
-        #  type: VPORT
-        #- name: output
-        #  type: VPORT
+        - name: input
+          type: VPORT
+        - name: output
+          type: VPORT
       mgmt-interface:
         cp: mgmt
