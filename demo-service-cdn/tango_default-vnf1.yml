@@ -18,15 +18,6 @@ virtual_deployment_units:
       storage:
         size: 10
         size_unit: GB
-    monitoring_parameters:
-      - name: vm_cpu_perc
-        unit: Percentage
-      - name: vm_mem_pers
-        unit: Percentage
-      - name: vm_net_rx_MB
-        unit: MB
-      - name: vm_net_tx_MB
-        unit: Mbps
     connection_points:
       - id: mgmt
         interface: ipv4

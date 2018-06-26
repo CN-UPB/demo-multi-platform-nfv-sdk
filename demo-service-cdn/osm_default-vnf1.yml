@@ -30,7 +30,6 @@ vnfd-catalog:
               virtual-interface:
                 type: VIRTIO
               external-connection-point-ref: output
-              
       connection-point:
         - name: mgmt
           type: VPORT

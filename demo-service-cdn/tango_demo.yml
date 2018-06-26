@@ -7,16 +7,16 @@ author: de.upb
 description: Demo network scenario with three VNFs
 network_functions:
   - vnf_id: vnf0
-    vnf_vendor: UPB
+    vnf_vendor: de.upb
     vnf_name: default-vnf0
     vnf_version: '0.9'
   - vnf_id: vnf1
     vnf_name: default-vnf1
-    vnf_vendor: UPB
+    vnf_vendor: de.upb
     vnf_version: '0.9'
   - vnf_id: vnf2
     vnf_name: default-vnf2
-    vnf_vendor: UPB
+    vnf_vendor: de.upb
     vnf_version: '0.9'
 connection_points:
   - id: mgmt
