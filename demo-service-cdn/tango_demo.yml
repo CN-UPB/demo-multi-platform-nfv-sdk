@@ -1,9 +1,9 @@
 descriptor_schema: >-
   https://raw.githubusercontent.com/sonata-nfv/tng-schema/master/service-descriptor/nsd-schema.yml
-vendor: UPB
+vendor: de.upb
 name: demo
 version: '0.9'
-author: UPB
+author: de.upb
 description: Demo network scenario with three VNFs
 network_functions:
   - vnf_id: vnf0

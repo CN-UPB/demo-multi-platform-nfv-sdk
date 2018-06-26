@@ -3,9 +3,9 @@ vnfd-catalog:
     - id: default-vnf2
       name: default-vnf2
       short-name: default-vnf2
-      vendor: UPB
+      vendor: de.upb
       version: 0.9
-      description: Squid proxy VNF
+      description: A VNF based on proxy-squid-img
       vdu:
         - id: vdu01
           name: vdu01

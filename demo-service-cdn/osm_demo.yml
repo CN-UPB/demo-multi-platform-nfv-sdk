@@ -3,7 +3,7 @@ nsd-catalog:
     - id: demo
       name: demo
       description: Demo network scenario with three VNFs
-      vendor: UPB
+      vendor: de.upb
       version: 1
       constituent-vnfd:
         - member-vnf-index: 0

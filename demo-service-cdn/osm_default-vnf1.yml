@@ -3,9 +3,9 @@ vnfd-catalog:
     - id: default-vnf1
       name: default-vnf1
       short-name: default-vnf1
-      vendor: UPB
+      vendor: de.upb
       version: 0.9
-      description: Layer 4 forwarder VNF
+      description: A VNF based on l4fw-socat-img
       vdu:
         - id: vdu01
           name: vdu01

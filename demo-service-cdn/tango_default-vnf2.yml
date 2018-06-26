@@ -1,20 +1,20 @@
 descriptor_schema: >-
   https://raw.githubusercontent.com/sonata-nfv/tng-schema/master/function-descriptor/vnfd-schema.yml
-vendor: UPB
+vendor: de.upb
 name: default-vnf2
 version: '0.9'
-author: UPB
-description: A default ubuntu VNF descriptor
+author: de.upb
+description: A VNF based on proxy-squid-img
 virtual_deployment_units:
   - id: vdu01
-    vm_image: proxy
+    vm_image: proxy-squid-img
     vm_image_format: docker
     resource_requirements:
       cpu:
         vcpus: 1
       memory:
-        size: 1
-        size_unit: GB
+        size: 512
+        size_unit: MB
       storage:
         size: 10
         size_unit: GB

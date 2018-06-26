@@ -3,7 +3,7 @@ vnfd-catalog:
     - id: default-vnf0
       name: default-vnf0
       short-name: default-vnf0
-      vendor: UPB
+      vendor: de.upb
       version: 0.9
       description: HTTP server
       vdu:
