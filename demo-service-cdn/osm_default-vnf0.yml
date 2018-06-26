@@ -5,7 +5,7 @@ vnfd-catalog:
       short-name: default-vnf0
       vendor: de.upb
       version: 0.9
-      description: HTTP server
+      description: A VNF based on http-apache-img
       vdu:
         - id: vdu01
           name: vdu01
