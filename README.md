@@ -1,36 +1,22 @@
 # Multi-Platform NFV SDK Demo
 
-Showing the end-to-end workflow from descriptor generation, creating a project and packaging it, to uploading it to OSM (or possible Tango) and running the uploaded service on the `vim-emu` emulator.
-
-
+Showing the end-to-end workflow from descriptor generation, creating a project and packaging it, to on-boarding it to OSM (or possible Tango) and running the uploaded service on the `vim-emu` emulator.
 
 Example service: [Simple video streaming network service](https://github.com/sonata-nfv/son-tutorials/tree/master/upb-emulator-mano-integration-demo) ([OSM files](https://github.com/sonata-nfv/son-tutorials/tree/master/upb-emulator-mano-integration-demo/osm/pkggen))
 
-
-
-## Architecture
-
 ![architecture](doc/architecture.png)
-
-Whiteboard (13.06.18):
-
-![whiteboard_architecture](doc/whiteboard_architecture.jpg)
-
-
 
 ## Installation
 
 * Descriptor generator
   * `git clone https://github.com/sonata-nfv/tng-sdk-descriptorgen.git`
 * Project:
-  * `git clone https://github.com/sonata-nfv/tng-sdk-project.git`
-  * `cd tng-sdk-project`
-  * `python setup.py install`
+  * `pip install git+https://github.com/sonata-nfv/tng-sdk-project.git`
   * Setup the workspace: `tng-wks`
 * Packager:
-  * `git clone https://github.com/sonata-nfv/tng-sdk-package.git`
-  * `cd tng-sdk-package`
-  * `python setup.py install`
+  * `pip install git+https://github.com/sonata-nfv/tng-sdk-package.git`
+* OSM client installation and configuration: See [wiki](https://github.com/CN-UPB/demo-multi-platform-nfv-sdk/wiki/Demo-setup:-tng-sdk-packager)
+* VIM emulator `vim-emu`: See manual installation on [OSM website](https://osm.etsi.org/wikipub/index.php/VIM_emulator)
 
 ## Demo steps
 
