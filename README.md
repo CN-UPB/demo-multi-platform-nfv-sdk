@@ -17,6 +17,7 @@ Example service: [Simple video streaming network service](https://github.com/son
   * `pip install git+https://github.com/sonata-nfv/tng-sdk-package.git`
 * OSM client installation and configuration: See [wiki](https://github.com/CN-UPB/demo-multi-platform-nfv-sdk/wiki/Demo-setup:-tng-sdk-packager)
 * VIM emulator `vim-emu`: See manual installation on [OSM website](https://osm.etsi.org/wikipub/index.php/VIM_emulator)
+* Install VNFs: `./build.sh` inside the `vnfs` directory of this project
 
 ## Demo steps
 
