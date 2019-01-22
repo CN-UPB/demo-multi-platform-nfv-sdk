@@ -6,6 +6,14 @@ Example service: [Simple video streaming network service](https://github.com/son
 
 ![architecture](doc/architecture.png)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rnj2hNq8N1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Cite this work
+
+If you use this demo, please cite our work:
+
+> Stefan Schneider, Manuel Peuster, Wouter Tavernier, Holger Karl: "A Fully Integrated Multi-Platform NFV SDK". IEEE Conference on Network Network Function Virtualization and Software Defined Networks (NFV-SDN), Verona, Italy (2018)
+
 ## Installation
 
 * Descriptor generator
