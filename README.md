@@ -6,7 +6,7 @@ Example service: [Simple video streaming network service](https://github.com/son
 
 ![architecture](doc/architecture.png)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Rnj2hNq8N1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Watch the full video of the demo here: https://youtu.be/Rnj2hNq8N1g
 
 ### Cite this work
 
