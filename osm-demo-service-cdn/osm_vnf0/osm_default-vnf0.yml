@@ -1,0 +1,44 @@
+vnfd-catalog:
+  vnfd:
+    - id: default-vnf0
+      name: default-vnf0
+      short-name: default-vnf0
+      vendor: de.upb
+      version: 0.9
+      description: A VNF based on http-apache-img
+      vdu:
+        - id: vdu01
+          name: vdu01
+          image: http-apache-img
+          vm-flavor:
+            vcpu-count: 1
+            memory-mb: 512
+            storage-gb: 10
+          interface:
+            - name: vnf0-mgmt
+              type: EXTERNAL
+              position: 0
+              virtual-interface:
+                type: VIRTIO
+              external-connection-point-ref: vnf0/mgmt
+            - name: vnf0-input
+              type: EXTERNAL
+              position: 0
+              virtual-interface:
+                type: VIRTIO
+              external-connection-point-ref: vnf0/input
+            - name: vnf0-output
+              type: EXTERNAL
+              position: 0
+              virtual-interface:
+                type: VIRTIO
+              external-connection-point-ref: vnf0/output
+      connection-point:
+        - name: vnf0/mgmt
+          type: VPORT
+        - name: vnf0/input
+          type: VPORT
+        - name: vnf0/output
+          type: VPORT
+      mgmt-interface:
+        cp: vnf0/mgmt

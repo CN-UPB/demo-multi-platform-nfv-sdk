@@ -1,0 +1,44 @@
+vnfd-catalog:
+  vnfd:
+    - id: default-vnf1
+      name: default-vnf1
+      short-name: default-vnf1
+      vendor: de.upb
+      version: 0.9
+      description: A VNF based on l4fw-socat-img
+      vdu:
+        - id: vdu01
+          name: vdu01
+          image: l4fw-socat-img
+          vm-flavor:
+            vcpu-count: 1
+            memory-mb: 512
+            storage-gb: 10
+          interface:
+            - name: vnf1-mgmt
+              type: EXTERNAL
+              position: 0
+              virtual-interface:
+                type: VIRTIO
+              external-connection-point-ref: vnf1/mgmt
+            - name: vnf1-input
+              type: EXTERNAL
+              position: 0
+              virtual-interface:
+                type: VIRTIO
+              external-connection-point-ref: vnf1/input
+            - name: vnf1-output
+              type: EXTERNAL
+              position: 0
+              virtual-interface:
+                type: VIRTIO
+              external-connection-point-ref: vnf1/output
+      connection-point:
+        - name: vnf1/mgmt
+          type: VPORT
+        - name: vnf1/input
+          type: VPORT
+        - name: vnf1/output
+          type: VPORT
+      mgmt-interface:
+        cp: vnf1/mgmt

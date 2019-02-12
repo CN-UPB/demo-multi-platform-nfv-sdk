@@ -1,0 +1,44 @@
+vnfd-catalog:
+  vnfd:
+    - id: default-vnf2
+      name: default-vnf2
+      short-name: default-vnf2
+      vendor: de.upb
+      version: 0.9
+      description: A VNF based on proxy-squid-img
+      vdu:
+        - id: vdu01
+          name: vdu01
+          image: proxy-squid-img
+          vm-flavor:
+            vcpu-count: 1
+            memory-mb: 512
+            storage-gb: 10
+          interface:
+            - name: vnf2-mgmt
+              type: EXTERNAL
+              position: 0
+              virtual-interface:
+                type: VIRTIO
+              external-connection-point-ref: vnf2/mgmt
+            - name: vnf2-input
+              type: EXTERNAL
+              position: 0
+              virtual-interface:
+                type: VIRTIO
+              external-connection-point-ref: vnf2/input
+            - name: vnf2-output
+              type: EXTERNAL
+              position: 0
+              virtual-interface:
+                type: VIRTIO
+              external-connection-point-ref: vnf2/output
+      connection-point:
+        - name: vnf2/mgmt
+          type: VPORT
+        - name: vnf2/input
+          type: VPORT
+        - name: vnf2/output
+          type: VPORT
+      mgmt-interface:
+        cp: vnf2/mgmt
