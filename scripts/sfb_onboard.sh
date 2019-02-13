@@ -1,6 +1,6 @@
 #!/bin/bash
 # package
-cd ../osm-demo-service-cdn;./pack.sh;ls -l;cd ../scripts
+#cd ../osm-demo-service-cdn;./pack.sh;ls -l;cd ../scripts
 # onboard
 osm vnfd-create ../osm-demo-service-cdn/osm_vnf0.tar.gz
 osm vnfd-create ../osm-demo-service-cdn/osm_vnf1.tar.gz

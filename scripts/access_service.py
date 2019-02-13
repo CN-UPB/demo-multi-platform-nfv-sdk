@@ -8,7 +8,7 @@
 import docker
 import subprocess
 
-PROXY_CONTAINER_NAME = ["/mn.dc1_demo1.default-vnf0.0.vdu01"]
+PROXY_CONTAINER_NAME = ["/mn.dc1_service1-2-vdu01-1"]
 
 
 def main():
