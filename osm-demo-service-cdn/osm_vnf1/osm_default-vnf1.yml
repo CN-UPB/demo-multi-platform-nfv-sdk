@@ -15,30 +15,30 @@ vnfd-catalog:
             memory-mb: 512
             storage-gb: 10
           interface:
-            # - name: vnf1-mgmt
-            #   type: EXTERNAL
-            #   position: 0
-            #   virtual-interface:
-            #     type: VIRTIO
-            #  external-connection-point-ref: vnf1/mgmt
-            - name: vnf1-input
+            - name: v1mgmt
+              type: EXTERNAL
+              position: 0
+              virtual-interface:
+                type: VIRTIO
+              external-connection-point-ref: vnf1/mgmt
+            - name: v1in
               type: EXTERNAL
               position: 0
               virtual-interface:
                 type: VIRTIO
               external-connection-point-ref: vnf1/input
-            - name: vnf1-output
+            - name: v1out
               type: EXTERNAL
               position: 0
               virtual-interface:
                 type: VIRTIO
               external-connection-point-ref: vnf1/output
       connection-point:
-        #- name: vnf1/mgmt
-        #  type: VPORT
+        - name: vnf1/mgmt
+          type: VPORT
         - name: vnf1/input
           type: VPORT
         - name: vnf1/output
           type: VPORT
-      #mgmt-interface:
-      #  cp: vnf1/mgmt
+      mgmt-interface:
+        cp: vnf1/mgmt
