@@ -13,21 +13,21 @@ nsd-catalog:
         - member-vnf-index: '2'
           vnfd-id-ref: vnf2
       vld:
-        # - id: mgmt
-        #   name: mgmt
-        #   mgmt-network: true
-        #   vim-network-name: default  # important for emulator!
-        #   type: ELAN
-        #   vnfd-connection-point-ref:
-        #     - member-vnf-index-ref: '0'
-        #       vnfd-connection-point-ref: vnf0/mgmt
-        #       vnfd-id-ref: vnf0
-        #     - member-vnf-index-ref: '1'
-        #       vnfd-connection-point-ref: vnf1/mgmt
-        #       vnfd-id-ref: vnf1
-        #     - member-vnf-index-ref: '2'
-        #       vnfd-connection-point-ref: vnf2/mgmt
-        #       vnfd-id-ref: vnf2
+        - id: mgmt
+          name: mgmt
+          mgmt-network: 'true'
+          vim-network-name: default  # important for emulator!
+          type: ELAN
+          vnfd-connection-point-ref:
+            - member-vnf-index-ref: '0'
+              vnfd-connection-point-ref: vnf0/mgmt
+              vnfd-id-ref: vnf0
+            - member-vnf-index-ref: '1'
+              vnfd-connection-point-ref: vnf1/mgmt
+              vnfd-id-ref: vnf1
+            - member-vnf-index-ref: '2'
+              vnfd-connection-point-ref: vnf2/mgmt
+              vnfd-id-ref: vnf2
         - id: vnf0-2-vnf1
           name: vnf0-2-vnf1
           vim-network-name: default  # important for emulator!

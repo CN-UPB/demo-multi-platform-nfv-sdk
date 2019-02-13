@@ -1,6 +1,6 @@
 #!/bin/bash
 osm ns-delete service1
-sleep 2
+sleep 1
 osm ns-list
-sleep 2
+sleep 5
 osm ns-list

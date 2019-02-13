@@ -21,12 +21,6 @@ vnfd-catalog:
               virtual-interface:
                 type: VIRTIO
               external-connection-point-ref: vnf0/mgmt
-            - name: v0in
-              type: EXTERNAL
-              position: 0
-              virtual-interface:
-                type: VIRTIO
-              external-connection-point-ref: vnf0/input
             - name: v0out
               type: EXTERNAL
               position: 0
@@ -35,8 +29,6 @@ vnfd-catalog:
               external-connection-point-ref: vnf0/output
       connection-point:
         - name: vnf0/mgmt
-          type: VPORT
-        - name: vnf0/input
           type: VPORT
         - name: vnf0/output
           type: VPORT
