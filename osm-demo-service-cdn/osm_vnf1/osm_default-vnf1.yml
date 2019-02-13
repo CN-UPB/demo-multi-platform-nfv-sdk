@@ -20,7 +20,7 @@ vnfd-catalog:
             #   position: 0
             #   virtual-interface:
             #     type: VIRTIO
-              external-connection-point-ref: vnf1/mgmt
+            #  external-connection-point-ref: vnf1/mgmt
             - name: vnf1-input
               type: EXTERNAL
               position: 0
