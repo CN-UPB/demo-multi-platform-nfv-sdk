@@ -15,13 +15,13 @@ vnfd-catalog:
             memory-mb: 512
             storage-gb: 10
           interface:
-            - name: v0mgmt
+            - name: vnf0-mgmt
               type: EXTERNAL
               position: 0
               virtual-interface:
                 type: VIRTIO
               external-connection-point-ref: vnf0/mgmt
-            - name: v0out
+            - name: vnf0-out
               type: EXTERNAL
               position: 0
               virtual-interface:
